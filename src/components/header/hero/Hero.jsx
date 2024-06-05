@@ -31,7 +31,7 @@ export default function Hero() {
           >
            Agende Aqui
           </CustomButton>
-          <CustomButton onClick={redirectToContact}>Entre em contato</CustomButton>
+          <CustomButton onClick={redirectToContact} className="header__hero__text__button-contato ">Entre em contato</CustomButton>
         </div>
       </div>
       <CustomImage

@@ -1,6 +1,11 @@
 
+import Header from "../components/header/header/Header";
+import Servicos from "../components/servicos/Servicos";
 export default function Home() {
   return (
-    <main></main>
+    <main>
+      <Header />
+      <Servicos />
+    </main>
   );
 }

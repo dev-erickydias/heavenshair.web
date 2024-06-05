@@ -1,6 +1,6 @@
 "use client";
 
-import Api from "@/utils/Api";
+import Api from "../../utils/Api";
 
 import React, {  useEffect, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';

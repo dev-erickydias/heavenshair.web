@@ -3,7 +3,6 @@ import "./navMenu.css";
 import NavMenuItem from "../navMenuItem/NavMenuItem";
 import CustomImage from "../../customImage/CustomImage";
 import CustomButton from "../../customButton/CustomButton";
-import logo from "../../../assets/logo.svg";
 
 export default function NavMenu() {
 
@@ -16,7 +15,7 @@ export default function NavMenu() {
       <div className="logo">
         <CustomImage
           className="logo__img"
-          src={logo}
+          src="/logo.svg"
           alt="Logo"
           width={103}
           height={103}

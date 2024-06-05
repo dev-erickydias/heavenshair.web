@@ -1,8 +1,7 @@
 "use client";
 import "./hero.css";
-import CustomImage from "@/components/customImage/CustomImage";
-import headerImage from "@/assets/vector_full.png";
-import CustomButton from "@/components/customButton/CustomButton";
+import CustomImage from "../../customImage/CustomImage";
+import CustomButton from "../../customButton/CustomButton";
 import { redirect } from "next/navigation";
 
 export default function Hero() {
@@ -37,7 +36,7 @@ export default function Hero() {
       </div>
       <CustomImage
         className={"header__hero__image"}
-        src={headerImage}
+        src="/Vector_full.png"
         alt={"Menina com Madeixas Feito no proprio salão"}
       />
     </section>

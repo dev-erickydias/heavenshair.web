@@ -4,8 +4,6 @@ export default function CustomImage({ src, alt, ...props }) {
         <img
             src={src}
             alt={alt}
-            width={width}
-            height={height}
             {...props}
         />
     );

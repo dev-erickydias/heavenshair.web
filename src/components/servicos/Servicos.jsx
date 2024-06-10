@@ -29,13 +29,11 @@ export default function Servicos() {
     <>
       <Swiper
       id="mobileGallerySlider"
-        modules={[Virtual, Navigation, Pagination]}
+        modules={[Virtual, Navigation, ]}
         slidesPerView={5}
         centeredSlides={false}
         spaceBetween={0}
-        pagination={{
-          type: 'fraction',
-        }}
+        
         navigation={true}
         virtual
       >

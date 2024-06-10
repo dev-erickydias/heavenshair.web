@@ -1,57 +1,27 @@
-.contact-form {
+.contact{
   margin: -600px auto 100px;
   padding: 20px;
   border-radius: 8px;
   width: 630px;
 }
 
-.contact-form__title {
+.contact__title {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #8b4513;
 }
 
-.contact-form__description {
+.contact__description {
   text-align: center;
   color: #666;
 }
-.contact-form__form {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 50px;
-  border-bottom: 1px solid #d6b666;
-}
-.contact-form__input,
-.contact-form__textarea,
-.contact-form__button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 4px;
-}
 
-.contact-form__input,
-.contact-form__textarea {
-  background-color: #296d65;
-  color: white;
-}
-.contact-form__input::placeholder,
-.contact-form__textarea::placeholder {
-  color: white;
-}
-.contact-form__button {
-  background-color: #1e403c;
-  color: white;
-  cursor: pointer;
-}
 
-.contact-form__button:hover {
-  background-color: #555;
-}
-.contact-form__social {
+.contact__social {
+    border-top: 1px solid #d6b666;
   display: flex;
   margin: 40px auto 0;
+  padding: 30px 0 0;
   justify-content: space-between;
   width: 333px;
   height: 41px;

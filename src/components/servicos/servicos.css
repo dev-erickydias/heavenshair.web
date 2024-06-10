@@ -1,0 +1,36 @@
+.servico__item {
+  background: #1e403c;
+  width: 274px !important;
+  height: 100.6px !important;
+  padding-bottom:20px;
+  margin: 100px 10px 50px;
+  border-radius: 12px;
+}
+.servico__item_container {
+  color: #fffcf5;
+  margin: 0 0 0 15px;
+  width: 220px;
+  height: 80px;
+}
+.servico__item_contain {
+  display: flex;
+  justify-content: space-between;
+}
+.servico__item_title {
+  height: 20px;
+  font-family: Inter;
+  font-size: 20.43px;
+  font-weight: 400;
+  line-height: 32.69px;
+  text-align: left;
+  
+}
+.servico__item_text {
+height: 33px;
+font-family: Inter;
+font-size: 20.43px;
+font-weight: 300;
+line-height: 32.69px;
+text-align: left;
+
+}

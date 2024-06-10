@@ -1,5 +1,5 @@
 "use client";
-
+import "./servicos.css"
 import Api from "../../utils/Api";
 
 import React, {  useEffect, useState } from 'react';
@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Loader from "../loader/Loader";
 
 
 
@@ -42,29 +43,17 @@ export default function Servicos() {
           servicos.map((servico) => (
             // aumenta a altura do cartão
             <SwiperSlide  key={servico.id_servico} className="servico__item">
-              <div>
-                <h3>{servico.nome}</h3>
-                <div className="servicos__item_contain">
-                  <p>{servico.preco}€</p>
-                  <p>{servico.a_partir_de}m</p>
+              <div className="servico__item_container">
+                <h3 className="servico__item_title">{servico.nome}</h3>
+                <div className="servico__item_contain">
+                  <p className="servico__item_text">{servico.preco}€</p>
+                  <p className="servico__item_text">{servico.a_partir_de}m</p>
                 </div>
               </div>
             </SwiperSlide>
           ))
-        ) : <p>Não existem serviços</p>}
+        ) : <Loader/>}
       </Swiper>
-      {/* <style jsx global>{`
-      #mobileGallerySlider .swiper-button-next {
-      }
-
-      #mobileGallerySlider .swiper-button-prev {
-
-      }
-      #mobileGallerySlider swiper-slide {
-        margin-right: 50px;
-      }
-
-      `}</style> */}
     </>
   );
 }

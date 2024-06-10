@@ -10,6 +10,7 @@ export default function Gallery(){
               return  <CustomImage src={item.image} alt={item.name} key={item.id}/>
             })}
             </div>
+            <CustomImage className="gallery__logo" src="/gallery/logo.png" alt="logo"/>
         </section>
     )
 }

@@ -1,5 +1,7 @@
 .gallery{
 margin: 0 0 100px;
+display: flex;
+flex-direction: column;
 }
 .gallery__title{
     width: 912px;
@@ -18,4 +20,12 @@ margin: 0 0 50px;
     column-gap: 35px;
     row-gap: 40px;
     margin: 0 auto;
+}
+.gallery__logo{
+    width: 496.8px;
+    height: 608.18px;
+    position: relative;
+    top: -100px;
+    left: 1100px;
+    z-index: -1;
 }

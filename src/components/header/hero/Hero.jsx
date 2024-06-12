@@ -3,6 +3,7 @@ import "./hero.css";
 import CustomImage from "../../customImage/CustomImage";
 import CustomButton from "../../customButton/CustomButton";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default function Hero() {
   function redirectToSchedule(e) {
@@ -11,9 +12,7 @@ export default function Hero() {
     );
   }
 
-  function redirectToContact(){
-    redirect("/contacto")
-  }
+
 
   return (
     <section className="header__hero">
@@ -31,7 +30,7 @@ export default function Hero() {
           >
            Agende Aqui
           </CustomButton>
-          <CustomButton onClick={redirectToContact} className="header__hero__text__button-contato ">Entre em contato</CustomButton>
+          <Link href="#contact"><CustomButton className="header__hero__text__button-contato ">Entre em contato</CustomButton></Link>
         </div>
       </div>
       <CustomImage

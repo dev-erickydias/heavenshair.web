@@ -5,7 +5,7 @@ import Link from 'next/link';
 import CustomImage from '../customImage/CustomImage';
 export default function ContactForm(){
   return (
-    <div className="contact">
+    <div id='contact' className="contact">
       <h2 className="contact__title">Entre em contato conosco!</h2>
       <p className="contact__description">
       Entre em contato conosco diretamente pelas redes sociais

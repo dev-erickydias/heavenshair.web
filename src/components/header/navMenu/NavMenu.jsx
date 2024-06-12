@@ -23,9 +23,9 @@ export default function NavMenu() {
       </div>
       <ul className="header__nav__menu">
         <NavMenuItem href="/">Home</NavMenuItem>
-        <NavMenuItem href="/servicos">Serviços</NavMenuItem>
+        <NavMenuItem href="#servicos">Serviços</NavMenuItem>
         <NavMenuItem href="/cursos">Cursos</NavMenuItem>
-        <NavMenuItem href="/contatos">contactos</NavMenuItem>
+        <NavMenuItem href="#contact">contactos</NavMenuItem>
       </ul>
       <CustomButton onClick={redirectToSchedule} className="nav__btn">Agende Aqui</CustomButton>
     </nav>

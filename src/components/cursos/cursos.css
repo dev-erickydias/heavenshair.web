@@ -1,0 +1,12 @@
+.cursos__container{
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+}
+.curso{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    justify-items: center;
+    align-items: center;
+}

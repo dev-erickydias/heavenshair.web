@@ -32,7 +32,7 @@ export default function Footer() {
             <Link className="footer__link" target="_blank" href="mailto:cbeheavenshair@gmail.com">
               <CustomImage src="/icon/emailBranco.png" />
             </Link>
-            <Link className="footer__link footer__termo" href="#">Termos de Privacidade</Link>
+            <Link className="footer__link footer__termo" href="/terms-of-responsibility">Termos de Privacidade</Link>
           </div>
         </div>
       </div>

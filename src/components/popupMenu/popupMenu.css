@@ -1,0 +1,44 @@
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 5px;
+    opacity: 0;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+    transition: visibility 0.1s, opacity 0.5s linear;
+  }
+  .popup_opened {
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+  }
+  .overlay {
+    position: fixed;
+    width: 35vw;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+  }
+  .popup_opened {
+    width: 433px;
+    height: 540px;
+    max-height: 30vh;
+    max-width: 50vw;
+  }
+  .menu__hamburger{
+    background-color: transparent;
+  }
+  .popup__nav__menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .popup__link a{
+    text-decoration: none;
+    color: #fff;
+  }

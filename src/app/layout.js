@@ -4,6 +4,8 @@ import "../styles/configsScroll.css"
 import NavMenu from "../components/header/navMenu/NavMenu";
 import Footer from "@/components/footer/Footer";
 
+import PopupMenu from "@/components/popupMenu/PopupMenu";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="page">
         <NavMenu />
+        <PopupMenu />
         {children}
         <Footer/>
         </body>

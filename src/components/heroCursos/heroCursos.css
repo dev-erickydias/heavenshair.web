@@ -1,11 +1,13 @@
-.header__hero_cursos{
-    margin: 50px 0;
+.header__hero_cursos {
+  margin: 50px 0;
+  padding: 0 15px;
 }
-
+.header__hero__text{
+  display: flex;
+  flex-direction: column;
+}
 .curso__contain {
-  position: relative;
-  text-align: center;
-  max-width: 100%;
+  display: none;
 }
 
 .curso__image {
@@ -23,27 +25,43 @@
   padding: 10px;
   border-radius: 5px;
   width: 90%;
-  font-size: 16px;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px; /* Reduz a fonte no mobile */
   font-weight: 400;
-  line-height: 30px;
-  text-align: left;
+  line-height: 1.5; /* Ajuste da altura da linha para um melhor espaçamento */
+  text-align: center; /* Centraliza o texto no mobile */
   font-weight: 500;
 }
 
 /* Estilos para telas maiores que 768px */
 @media (min-width: 768px) {
   .curso__text {
-    font-size: 1.2rem;
-    width: 80%;
+      font-size: 1.2rem; /* Aumenta a fonte em telas maiores */
+      width: 80%;
+  }
+  .curso__contain {
+    display: none;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
   }
 }
 
 /* Estilos para telas maiores que 1024px */
 @media (min-width: 1024px) {
   .curso__text {
-    font-size: 1.4rem;
-    width: 70%;
+      font-size: 1.4rem; /* Aumenta ainda mais a fonte em telas maiores */
+      width: 70%;
+  }
+  .curso__contain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    gap: 30px;
+  }
+  .header__hero_cursos{
+    justify-content: space-between;
   }
 }

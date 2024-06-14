@@ -1,6 +1,5 @@
-
+import "../header/hero/hero.css"
 import "./heroCursos.css"
-
 import CustomImage from "../customImage/CustomImage";
 import CustomButton from "../customButton/CustomButton";
 import Link from "next/link";

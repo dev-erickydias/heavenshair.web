@@ -47,7 +47,7 @@ export default function NavMenu() {
           </div>
           <ul className="header__nav__menu">
             <NavMenuItem className={"header__menu__item"} href="/">Home</NavMenuItem>
-            <NavMenuItem className={"header__menu__item"} href="#servicos">Serviços</NavMenuItem>
+            <NavMenuItem className={"header__menu__item"} href="/#servicos">Serviços</NavMenuItem>
             <NavMenuItem className={"header__menu__item"} href="/cursos">Cursos</NavMenuItem>
             <NavMenuItem className={"header__menu__item"} href="#contact">Contactos</NavMenuItem>
           </ul>

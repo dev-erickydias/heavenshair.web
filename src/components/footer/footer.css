@@ -47,7 +47,12 @@
   color: #fffcf5;
   margin-bottom: 10px;
 }
-
+.footer__copy{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0;
+  gap: 5px;
+}
 .footer__section_copy {
   font-family: Inter;
   font-size: 12px;
@@ -120,7 +125,8 @@
     font-size: 20px;
   }
   .footer__copy{
-    display: flex;
+    flex-direction: row;
     width: 100%;
+
   }
 }

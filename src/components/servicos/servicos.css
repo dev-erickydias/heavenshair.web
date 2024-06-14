@@ -29,7 +29,7 @@
 
 .servico__item {
   background: #1d3e3b;
-  width: 310px !important;
+  width: 100px !important;
   margin: 0 20px 0 0!important;
   max-width: 310px !important;
   height: auto !important;
@@ -46,6 +46,7 @@
 
 .servico__item_contain {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 

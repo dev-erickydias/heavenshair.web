@@ -107,3 +107,46 @@
       margin: 37px 0 0;
   }
 }
+@media (min-width: 1024px) {
+  .cursos {
+    margin: 100px 0 50px;
+  }
+
+  .cursos__title {
+    width: 454px;
+    font-size: 32px;
+    text-align: left;
+    margin: 0 0 50px;
+  }
+
+  .cursos__container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .curso {
+    max-width: 500px;
+    padding: 0;
+  }
+
+  .curso_title {
+    width: 100%;
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .curso_decription {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .curso_btn {
+    width: 100%;
+    max-width: 350px;
+    margin: 37px 0 0;
+  }
+}

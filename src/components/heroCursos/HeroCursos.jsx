@@ -1,4 +1,4 @@
-import "../header/hero/hero.css"
+
 import "./heroCursos.css"
 import CustomImage from "../customImage/CustomImage";
 import CustomButton from "../customButton/CustomButton";
@@ -6,15 +6,16 @@ import Link from "next/link";
 
 export default function HeroCursos() {
   return (
-    <section className="header__hero header__hero_cursos">
-    <div className="header__hero__text">
-      <h1 className="header__hero__text__title">Cursos de Formação!!!</h1>
-      <p className="header__hero__text__description">
+    <section className="cursos__hero">
+      
+    <div className="cursos__hero__text">
+      <h1 className="cursos__hero__text__title">Cursos de Formação!!!</h1>
+      <p className="cursos__hero__text__description">
       Torne-se profissional conosco!!
       </p>
-      <div className="header__hero__btn">
+      <div className="cursos__hero__btn">
         <Link href="/#contact">
-          <CustomButton className="header__hero__text__button-contato ">
+          <CustomButton className="cursos__hero__text__button-contato ">
           Entre em contato
           </CustomButton>
         </Link>

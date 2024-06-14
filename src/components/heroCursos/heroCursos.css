@@ -1,10 +1,27 @@
-.header__hero_cursos {
+.cursos__hero {
   margin: 50px 0;
   padding: 0 15px;
-}
-.header__hero__text{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cursos__hero__text__title {
+  color: #734814;
+  font-family: Allura;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+.cursos__hero__text__description {
+  color: #734814;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 30px;
 }
 .curso__contain {
   display: none;
@@ -26,17 +43,38 @@
   border-radius: 5px;
   width: 90%;
   font-family: Inter;
-  font-size: 14px; /* Reduz a fonte no mobile */
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.5; /* Ajuste da altura da linha para um melhor espaçamento */
-  text-align: center; /* Centraliza o texto no mobile */
+  line-height: 1.5;
+  text-align: center;
   font-weight: 500;
+  
 }
-
-/* Estilos para telas maiores que 768px */
+.cursos__hero__btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.cursos__hero__text__button-contato {
+  background-color: #fff;
+  border: 1px solid #1e403c;
+  color: #1e403c;
+}
+.cursos__hero__text__button,
+.cursos__hero__text__button-contato {
+  width: 136px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 @media (min-width: 768px) {
+  .cursos__hero {
+    flex-direction: row;
+    text-align: left;
+  }
   .curso__text {
-      font-size: 1.2rem; /* Aumenta a fonte em telas maiores */
+      font-size: 1.2rem;
       width: 80%;
   }
   .curso__contain {
@@ -44,6 +82,19 @@
     position: relative;
     text-align: center;
     max-width: 100%;
+  }
+  .cursos__hero__text__title {
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 10px;
+  }
+  .cursos__hero__text__description {
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .cursos__hero__btn {
+    justify-content: flex-start;
   }
 }
 
@@ -61,7 +112,7 @@
     max-width: 100%;
     gap: 30px;
   }
-  .header__hero_cursos{
+  .cursos__hero{
     justify-content: space-between;
   }
 }

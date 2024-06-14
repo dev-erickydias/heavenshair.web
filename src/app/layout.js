@@ -24,11 +24,14 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="Next.js, CSS, React.js, AfroHair, Hair, Lisboa, Portugal" />
         <meta name="author" content="Ericky Dias" />
       </head>
-      <body className="page">
+      <body>
+      <PopupMenu />
+        <div className="page">
         <NavMenu />
-        <PopupMenu />
+        
         {children}
         <Footer/>
+        </div>
         </body>
     </html>
   );
